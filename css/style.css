@@ -20,11 +20,17 @@ header {
 
 section {
     display: flex;
+    justify-content: center;
+    background-color: #1E2D3B;
+}
+
+.container {
+    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     height: 90vh;
-    background-color: #1E2D3B;
+    max-width: 1550px;
 }
 
 .cards {
@@ -39,12 +45,19 @@ section {
     text-align: center;
     align-items: center;
     height: 100%;
+    padding: 10px;
     background-color: #2E3A46;
 }
 
+.card img {
+    margin-top: 20px;
+    height: 50%;
+}
+
 .card h3 {
+    margin: 20px 0;
     font-size: 18px;
-    color: white;
+    color: whitesmoke;
     text-transform: uppercase;
 }
 .card h4 {

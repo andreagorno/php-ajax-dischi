@@ -22,20 +22,19 @@
         <?php include __DIR__ . '/partials/header.php'; ?>
         
         <section>
-
-            <?php foreach ($dischi as $disco) { ?>
-                <div class="cards">
-                    <div class="card">
-                        <img src=`<?= $disco["poster"]; ?>` alt="poster">
-                        <h3><?= $disco["title"]; ?>
-                        </h3>
-                        <h4><?= $disco["author"]; ?></h4>                
-                        <h4><?= $disco["year"]; ?></h4>                
+            <div class="container">
+                <?php foreach ($dischi as $disco) { ?>
+                    <div class="cards">
+                        <div class="card">
+                            <img src=<?= $disco["poster"]; ?> alt="poster">
+                            <h3><?= $disco["title"]; ?>
+                            </h3>
+                            <h4><?= $disco["author"]; ?></h4>                
+                            <h4><?= $disco["year"]; ?></h4>                
+                        </div>
                     </div>
-                </div>
-            <?php } ?>
-            
-
+                <?php } ?>
+            </div>
         </section>
 
     </body>
